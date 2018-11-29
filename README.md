@@ -3,6 +3,7 @@ Projeto para o desenvolvimento de um serviço web de assinatura digital: assinak
 
 # Preparar o ambiente de desenvolvimento e criar a conta no heroku
 Tenha o python na versão 3.x instalado: `python3`
+
 Antes de começar execute o comando abaixo para nstalar as bibliotecas necessárias
 ```sh
 sudo pip install -U pip django gunicorn django-heroku pillow virtualenv
