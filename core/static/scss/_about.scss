@@ -1,0 +1,162 @@
+.about {
+	@extend %section-padding;
+
+	&-introduction {
+		@extend %introduce;
+
+		p {
+			color: $main-gray;
+		}
+	}
+	h3 {
+		margin: $margin-medium * 1.5 0;
+	}
+	&-counter {
+		background: $main-light-color;
+
+		@include desktop {
+			padding: $padding-large 0;
+		}
+				@include tablet {
+			padding: $padding-large 0;
+		}
+					@include medium-tablet {
+			padding: 0;
+		}
+
+		.icon {
+			font-size: 40px;
+			color: $main-theme-color;
+		}
+		&-single {
+			border-right: 1px solid rgba($main-gray, 0.5);
+
+			@include medium-tablet {
+				border-right: none;
+				border-bottom: 1px solid rgba($main-gray, 0.5);
+				margin-bottom: $margin-base;
+			}
+			@include smartphone {
+				border-right: none;
+				border-bottom: 1px solid rgba($main-gray, 0.5);
+				margin-bottom: $margin-base;
+			}
+		}
+		.counter {
+			@include medium-tablet {
+				padding: $padding-medium 0;
+			}
+			@include smartphone {
+				padding: $padding-medium 0;
+			}
+		}
+	}
+	
+	&-number {
+		margin: $margin-medium 0 0;
+		display: block;
+
+		.icon {
+			color: $main-theme-color;
+			font-size: 60%;
+		}
+		&-box {
+			div {
+				@include medium-tablet {
+					padding: $padding-medium 0;
+				}
+				@include smartphone {
+					padding: $padding-medium 0;
+				}
+			}
+			div:first-child {
+				border-right: 1px solid rgba($main-gray, 0.5);
+
+				@include medium-tablet {
+					border-right: none;
+					border-bottom: 1px solid rgba($main-gray, 0.5);
+				}
+				@include smartphone {
+					border-right: none;
+					border-bottom: 1px solid rgba($main-gray, 0.5);
+				}
+			}
+		}
+	}
+	&-slider {
+		p {
+			font-size: 18px;
+			color: $main-gray;
+			line-height: 26px;
+		}
+		&-half {
+			display: inline;
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+
+			@include medium-tablet {
+				width: 100%;
+				padding: 0 $padding-base;
+			}
+			@include smartphone {
+				width: 100%;
+				padding: 0 $padding-base;
+			}
+			&-padding {
+				padding-left: $padding-large;
+
+				@include medium-tablet {
+					padding: 0 $padding-base;
+				}
+				@include smartphone {
+					padding: 0 $padding-base;
+				}
+			}
+		}
+	}
+	&-image {
+		position: relative;
+
+		&-layer {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&-row {
+		width: 100%;
+		float: left;
+		padding: 0 $padding-base;
+
+		@include tablet {
+			margin-bottom: $margin-medium;
+
+			h3 {
+				margin-top: 0;
+			}
+		}
+		@include medium-tablet {
+			margin-bottom: $margin-medium;
+
+			h3 {
+				margin-top: $margin-medium;
+			}
+		}
+		@include smartphone {
+			margin-bottom: $margin-medium;
+		}
+	}
+	&-grid {
+		margin: 0;
+		padding: 0;
+	}
+	&-text-box {
+		padding: 0 $padding-medium;
+	}
+}

@@ -1,0 +1,807 @@
+{% extends "base.html" %}
+{% load static %}
+{% block container %}
+
+    <section class="home home-isometric section" id="home">
+        <div class="home-isometric-wrapper">
+            <img class="wow home-isometric-1 fadeInDown" src="{% static 'img/isometric/layer-1.png' %}" data-wow-delay="0.1s" alt="home image">
+            <img class="layer fadeInUp wow home-isometric-2" src="{% static 'img/isometric/layer-2.png' %}" data-wow-delay="0.3s" alt="home image">
+            <img class="layer fadeInLeft wow home-isometric-3" src="{% static 'img/isometric/layer-3.png' %}" data-wow-delay="0.5s" alt="home image">
+
+        </div>
+
+        <div class="home-slider text-center">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2 class="home-slider-title-main">Assinaki Documents</h2>
+                    <div class="home-slider-title-small">Solução simples na relação entre partes.     </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <h2 class="home-slider-title-main">Gestão de seus documentos</h2>
+                    <div class="home-slider-title-small">Acompanhe o prazo e solicite assinaturas de todas as partes envolvidas</div>
+                </div>
+            </div>
+
+            <div class="home-pagination"></div>
+            <div class="home-slider-next right-arrow-negative">
+                <span class="ti-arrow-right"></span>
+            </div>
+
+            <div class="home-slider-prev left-arrow-negative">
+                <span class="ti-arrow-left"></span>
+            </div>
+        </div>
+        <div class="home-buttons text-center">
+            <a href="#about" class="btn btn-margin btn-lg  btn-primary">estimate project</a>
+            <a href="#about" class="btn btn-margin btn-lg  btn-default">about us</a>
+        </div>
+    </section>
+
+    <section class="text-center shadow section section-min">
+        <div id="about-counter" class="about-counter">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 wow fadeInLeft about-counter-single" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                        <div class="counter">
+                            <span class="ti-crown icon"></span>
+                            <h2 class="timer"> 250</h2>
+                            <p>Projects Finished</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInLeft about-counter-single" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                        <div class="counter">
+                            <span class="ti-shortcode icon"></span>
+                            <h2 class="timer">28256 </h2>
+                            <p>Line Of Coding</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInLeft about-counter-single" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="counter">
+                            <span class="ti-cup icon"></span>
+                            <h2 class="timer"> 42</h2>
+                            <p>Award Won</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
+                        <div class="counter">
+                            <span class="ti-comments-smiley icon"></span>
+                            <h2 class="timer">240</h2>
+                            <p>Satisfied Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 testimonials-introduction">
+                    <h2 class="text-center">What Our Clients Say</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+                <div class="testimonials-slider text-center">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials-container shadow">
+                                <img class="wow fadeInUp" src="{% static 'img/user.png' %}" alt="user avatar">
+                                <h3 class="wow fadeInUp" data-wow-delay=".4s">Martin Johe, Co-Founder / CEO
+                            <span>Fastcompany ltd.</span>
+                            </h3>
+                                <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonials-container shadow">
+                                <img src="{% static 'img/user.png' %}" alt="user avatar">
+                                <h3>Martin Johe, Co-Founder / CEO
+                            <span>Fastcompany ltd.</span>
+                            </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonials-container shadow">
+                                <img src="{% static 'img/user.png' %}" alt="user avatar">
+                                <h3>Martin Johe, Co-Founder / CEO
+                            <span>Fastcompany ltd.</span>
+                            </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-pagination"></div>
+                    <div class="testimonials-slider-next right-arrow-negative">
+                        <span class="ti-arrow-right"></span>
+                    </div>
+
+                    <div class="testimonials-slider-prev left-arrow-negative">
+                        <span class="ti-arrow-left"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 portfolio-introduction">
+                    <h2 class="text-center">Check our works</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <ul class="simplefilter portfolio-filter-label">
+                    <li class="active wow fadeInDown" data-wow-delay=".2s" data-filter="all">All</li>
+                    <li class="wow fadeInDown" data-wow-delay=".3s" data-filter="1">option filter 1</li>
+                    <li class="wow fadeInDown" data-wow-delay=".4s" data-filter="2">option filter 2</li>
+                    <li class="wow fadeInDown" data-wow-delay=".5s" data-filter="3">option filter 3</li>
+                    <li class="wow fadeInDown" data-wow-delay=".6s" data-filter="4">option filter 4</li>
+                    <li class="wow fadeInDown" data-wow-delay=".7s" data-filter="5">option filter 5</li>
+                </ul>
+                <div class="filtr-container">
+                    <ul class="portfolio-list">
+                        <li class="filtr-item" data-category="1, 3">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project1.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="filtr-item" data-category="4 , 2">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project2.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="filtr-item" data-category="2 , 5">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project3.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="filtr-item" data-category="1 , 5">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project4.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="filtr-item" data-category="4 , 3">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project5.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="filtr-item" data-category="3 , 5">
+                            <a href="" class="portfolio-thumbnail" style="background-image: url('img/portfolio/project6.jpg')" data-toggle="modal" data-target="#portfolio-01">
+                                <span class="portfolio-description text-center">
+                                <span class="text-center portfolio-title">Web development</span>
+                                <span>Get the latest technologies</span>
+                                <span class="btn btn-margin btn-default">show more</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- PORTFOLIO MODAL -->
+                <div id="portfolio-01" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content shadow">
+                            <a class="close" data-dismiss="modal"><span class="ti-close"></span></a>
+                            <div class="modal-body modal-lg">
+                                <div class="post-entry post-entry-modal">
+                                    <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h3>
+                                    <span class="post-entry-meta">
+                                    <img src="img/user.png" class="post-entry-author pull-left" alt="user avatar">
+                                    <span class="post-entry-author-name pull-left">Alex Example</span>
+                                    <span class="post-entry-time pull-right">6 min read
+                                    <span class="post-entry-category">web design</span></span>
+                                    </span>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel slide portfolio-slide" id="portfolio-carousel">
+                                        <div class="carousel-inner cont-slider">
+                                            <div class="item active">
+                                                <img alt="" title="" src="img/portfolio/project1.jpg">
+                                            </div>
+
+                                            <div class="item">
+                                                <img alt="" title="" src="img/portfolio/project2.jpg">
+                                            </div>
+
+                                            <div class="item">
+                                                <img alt="" title="" src="img/portfolio/project3.jpg">
+                                            </div>
+
+                                            <div class="item">
+                                                <img alt="" title="" src="img/portfolio/project4.jpg">
+                                            </div>
+                                        </div>
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li class="active" data-slide-to="0" data-target="#portfolio-carousel">
+                                                <img alt="" src="img/portfolio/project1.jpg">
+                                            </li>
+                                            <li class="" data-slide-to="1" data-target="#portfolio-carousel">
+                                                <img alt="" src="img/portfolio/project2.jpg">
+                                            </li>
+                                            <li class="" data-slide-to="2" data-target="#portfolio-carousel">
+                                                <img alt="" src="img/portfolio/project3.jpg">
+                                            </li>
+                                            <li class="" data-slide-to="3" data-target="#portfolio-carousel">
+                                                <img alt="" src="img/portfolio/project4.jpg">
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <!-- Wrapper for slides -->
+                                    <p>Our recruitment process is simple and has no secrets. We’ve written at length about tips & tricks on how to join netguru and how pair programming helps us choose the best talent.
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    </p>
+
+                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / PORTFOLIO MODAL -->
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 timeline-introduction">
+                    <h2 class="text-center">Our History</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+                <div class="col-md-12">
+                    <ul class="timeline-list">
+                        <li class="">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-briefcase"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInLeft">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">consectetur adipisicing elit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-panel"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInRight">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">Duis aute irure dolor in reprehenderit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-briefcase"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInLeft">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">consectetur adipisicing elit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-panel"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInRight">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">Duis aute irure dolor in reprehenderit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 pricing-introduction">
+                    <h2 class="text-center">Our prices</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+                <div class="col-md-4 wow fadeInLeft">
+                    <div class="pricing-box shadow text-center">
+                        <span class="icon ti-announcement"></span>
+                        <h3>plan basic</h3>
+                        <span class="pricing-box-price">
+                        $99
+                        <span class="pricing-box-price-small">per month</span>
+                        </span>
+                        <ul>
+                            <li>Personal use</li>
+                            <li>Unlimited projects</li>
+                            <li>24/7 support</li>
+                            <li>3 email address</li>
+                            <li>free hosting</li>
+                        </ul>
+                        <a href="#" class="btn btn-margin btn-default">select <span class="ti-arrow-right"></span></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pricing-box pricing-box-featured shadow text-center wow fadeInUp">
+                        <span class="icon ti-announcement"></span>
+                        <h3>plan standard</h3>
+                        <span class="pricing-box-price">
+                        $119
+                        <span class="pricing-box-price-small">per month</span>
+                        </span>
+                        <ul>
+                            <li>Personal use</li>
+                            <li>Unlimited projects</li>
+                            <li>24/7 support</li>
+                            <li>3 email address</li>
+                            <li>free hosting</li>
+                        </ul>
+                        <a href="#" class="btn btn-margin btn-default">select <span class="ti-arrow-right"></span></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInRight">
+                    <div class="pricing-box shadow text-center">
+                        <span class="icon ti-announcement"></span>
+                        <h3>plan premium</h3>
+                        <span class="pricing-box-price">
+                        $199
+                        <span class="pricing-box-price-small">per month</span>
+                        </span>
+                        <ul>
+                            <li>Personal use</li>
+                            <li>Unlimited projects</li>
+                            <li>24/7 support</li>
+                            <li>3 email address</li>
+                            <li>free hosting</li>
+                        </ul>
+                        <a href="#" class="btn btn-margin btn-default">select <span class="ti-arrow-right"></span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="post-list section" id="news">
+        <div class="container overflow-hidden">
+            <div class="row">
+                <div class="col-md-12 post-list-introduction">
+                    <h2 class="text-center">Our posts</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+
+                <div class="post-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="post-entry wow fadeInUp">
+                                <a class="h3" href="#" data-toggle="modal" data-target="#post-01">Estibulum ante ipsum primis lobortis<br>in faucibus orci.</a>
+
+                                <span class="post-entry-meta">
+                               <img src="{% load static %}img/user.png' %}" class="post-entry-author pull-left" alt="user avatar">
+                               <span class="post-entry-author-name pull-left">Alex Example</span>
+                                <span class="post-entry-time pull-right">6 min read
+                               <span class="post-entry-category">web design</span></span>
+                                </span>
+
+                                <a href="#" data-toggle="modal" data-target="#post-01">
+                                    <span class="post-entry-cover" style="background-image:url(img/portfolio/project1.jpg); ">
+                               </span>
+                                </a>
+
+                                <p>Pellentesque quis hendrerit nulla. In sed nulla cursus, viverra ipsum sit amet, facilisis turpis. Aliquam placerat quam quis nulla congue posuere. Fusce quis ullamcorper urna. Integer porttitor urna ac lobortis commodo. Vestibulum dignissim, lorem lobortis blandit consectetur, lacus diam condimentum magna, sit amet porttitor nisi orci vitae magna. Donec bibendum ante odio, at consequat nibh commodo non.
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="post-entry wow fadeInUp">
+                                <a class="h3" href="#" data-toggle="modal" data-target="#post-01">Estibulum ante ipsum primis lobortis<br>in faucibus orci.</a>
+
+                                <span class="post-entry-meta">
+                               <img src="{% load static %}img/user.png' %}" class="post-entry-author pull-left" alt="user avatar">
+                               <span class="post-entry-author-name pull-left">Alex Example</span>
+                                <span class="post-entry-time pull-right">6 min read
+                               <span class="post-entry-category">web design</span></span>
+                                </span>
+
+                                <a href="#" data-toggle="modal" data-target="#post-01">
+                                    <span class="post-entry-cover" style="background-image:url(img/portfolio/project5.jpg); ">
+                               </span>
+                                </a>
+
+                                <p>Pellentesque quis hendrerit nulla. In sed nulla cursus, viverra ipsum sit amet, facilisis turpis. Aliquam placerat quam quis nulla congue posuere. Fusce quis ullamcorper urna. Integer porttitor urna ac lobortis commodo. Vestibulum dignissim, lorem lobortis blandit consectetur, lacus diam condimentum magna, sit amet porttitor nisi orci vitae magna. Donec bibendum ante odio, at consequat nibh commodo non.
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="post-entry">
+                                <a class="h3" href="#" data-toggle="modal" data-target="#post-01">Estibulum ante ipsum primis lobortis<br>in faucibus orci.</a>
+
+                                <span class="post-entry-meta">
+                               <img src="{% load static %}img/user.png' %}" class="post-entry-author pull-left" alt="user avatar">
+                               <span class="post-entry-author-name pull-left">Alex Example</span>
+                                <span class="post-entry-time pull-right">6 min read
+                               <span class="post-entry-category">web design</span></span>
+                                </span>
+
+                                <a href="#" data-toggle="modal" data-target="#post-01">
+                                    <span class="post-entry-cover" style="background-image:url(img/portfolio/project3.jpg); ">
+                               </span>
+                                </a>
+
+                                <p>Pellentesque quis hendrerit nulla. In sed nulla cursus, viverra ipsum sit amet, facilisis turpis. Aliquam placerat quam quis nulla congue posuere. Fusce quis ullamcorper urna. Integer porttitor urna ac lobortis commodo. Vestibulum dignissim, lorem lobortis blandit consectetur, lacus diam condimentum magna, sit amet porttitor nisi orci vitae magna. Donec bibendum ante odio, at consequat nibh commodo non.
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">read more</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="post-entry">
+                                <a class="h3" href="#" data-toggle="modal" data-target="#post-01">Estibulum ante ipsum primis lobortis<br>in faucibus orci.</a>
+
+                                <span class="post-entry-meta">
+                               <img src="{% load static %}img/user.png' %}" class="post-entry-author pull-left" alt="user avatar">
+                               <span class="post-entry-author-name pull-left">Alex Example</span>
+                                <span class="post-entry-time pull-right">6 min read
+                               <span class="post-entry-category">web design</span></span>
+                                </span>
+
+                                <a href="#" data-toggle="modal" data-target="#post-01">
+                                    <span class="post-entry-cover" style="background-image:url(img/portfolio/project4.jpg); ">
+                               </span>
+                                </a>
+
+                                <p>Pellentesque quis hendrerit nulla. In sed nulla cursus, viverra ipsum sit amet, facilisis turpis. Aliquam placerat quam quis nulla congue posuere. Fusce quis ullamcorper urna. Integer porttitor urna ac lobortis commodo. Vestibulum dignissim, lorem lobortis blandit consectetur, lacus diam condimentum magna, sit amet porttitor nisi orci vitae magna. Donec bibendum ante odio, at consequat nibh commodo non.
+                                </p>
+                                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-pagination text-center"></div>
+                    <div class="post-slider-next right-arrow-negative">
+                        <span class="ti-arrow-right"></span>
+                    </div>
+
+                    <div class="post-slider-prev left-arrow-negative">
+                        <span class="ti-arrow-left"></span>
+                    </div>
+                </div>
+                <!-- / BLOG MODAL -->
+                <div id="post-01" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content shadow">
+                            <a class="close" data-dismiss="modal"><span class="ti-close"></span></a>
+                            <div class="modal-body">
+                                <div class="post-entry post-entry-modal">
+                                    <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h3>
+                                    <span class="post-entry-meta">
+                                    <img src="{% load static %}img/user.png' %}" class="post-entry-author pull-left" alt="user avatar">
+                                    <span class="post-entry-author-name pull-left">Alex Example</span>
+                                    <span class="post-entry-time pull-right">6 min read
+                                    <span class="post-entry-category">web design</span></span>
+                                    </span>
+                                    <span class="post-entry-cover" style="background-image:url(img/portfolio/project1.jpg); ">
+                                </span>
+
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    </p>
+
+                                    <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / BLOG MODAL -->
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 team-introduction">
+                    <h2 class="text-center">Our team</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <ul>
+                    <li class="col-md-3 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#team-member-01" class="team-member wow fadeInUp" data-wow-delay=".2s">
+                            <span class="team-member-photo">
+                            <img src="{% static 'img/user.png' %}" alt="team member">
+                        </span>
+
+                            <span class="team-member-name h4">Alex Example</span>
+                            <span class="team-member-role">Web designer</span>
+                        </a>
+                    </li>
+
+                    <li class="col-md-3 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#team-member-01" class="team-member wow fadeInUp" data-wow-delay=".4s">
+                            <span class="team-member-photo">
+                            <img src="{% static 'img/user.png' %}" alt="team member">
+                        </span>
+
+                            <span class="team-member-name h4">Alex Example</span>
+                            <span class="team-member-role">Web designer</span>
+                        </a>
+                    </li>
+
+                    <li class="col-md-3 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#team-member-01" class="team-member wow fadeInUp" data-wow-delay=".6s">
+                            <span class="team-member-photo">
+                            <img src="{% static 'img/user.png' %}" alt="team member">
+                        </span>
+
+                            <span class="team-member-name h4">Alex Example</span>
+                            <span class="team-member-role">Web designer</span>
+                        </a>
+                    </li>
+
+                    <li class="col-md-3 col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#team-member-01" class="team-member wow fadeInUp" data-wow-delay=".8s">
+                            <span class="team-member-photo">
+                            <img src="{% static 'img/user.png' %}" alt="team member">
+                        </span>
+
+                            <span class="team-member-name h4">Alex Example</span>
+                            <span class="team-member-role">Web designer</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- TEAM MODAL -->
+                <div id="team-member-01" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content shadow">
+                            <a class="close" data-dismiss="modal"><span class="ti-close"></span></a>
+                            <div class="modal-body modal-lg">
+                                <div class="team-member-detail">
+                                    <div class="col-md-8">
+                                        <div class="team-member-description">
+                                            <h4 class="">Experiences</h4>
+                                            <ul>
+                                                <li class="">
+                                                    <span class="team-member-description-date text-center">2016</span>
+                                                    <span class="team-member-description-info">
+                                                <span class="team-member-description-title">Art Director</span>
+                                                    <span class="team-member-description-company">3px Advertising Agency | France, Bordeux</span>
+                                                    <span class="team-member-description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                </span>
+                                                    </span>
+                                                </li>
+
+                                                <li class="">
+                                                    <span class="team-member-description-date text-center">2016</span>
+                                                    <span class="team-member-description-info">
+                                                <span class="team-member-description-title">Art Director</span>
+                                                    <span class="team-member-description-company">3px Advertising Agency | France, Bordeux</span>
+                                                    <span class="team-member-description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                </span>
+                                                    </span>
+                                                </li>
+
+
+                                                <li class="">
+                                                    <span class="team-member-description-date text-center">2016</span>
+                                                    <span class="team-member-description-info">
+                                                <span class="team-member-description-title">Art Director</span>
+                                                    <span class="team-member-description-company">3px Advertising Agency | France, Bordeux</span>
+                                                    <span class="team-member-description-details">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                </span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="team-member-skills">
+                                            <h4 class="">Skills</h4>
+                                            <ul class="row">
+                                                <li class="col-sm-6" data-wow-duration="1s">
+                                                    <span class="team-member-skills-label">photoshop</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-55"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1s">
+                                                    <span class="team-member-skills-label">HTML</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-99"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1.2s">
+                                                    <span class="team-member-skills-label">CSS</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-12"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1.2s">
+                                                    <span class="team-member-skills-label">JS</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-79"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1.4s">
+                                                    <span class="team-member-skills-label">photoshop</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-55"></span>
+                                                    </span>
+                                                </li>
+                                                <li class=" col-sm-6" data-wow-duration="1.4s">
+                                                    <span class="team-member-skills-label">HTML</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-99"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1.6s">
+                                                    <span class="team-member-skills-label">CSS</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-12"></span>
+                                                    </span>
+                                                </li>
+                                                <li class="col-sm-6" data-wow-duration="1.6s">
+                                                    <span class="team-member-skills-label">JS</span>
+                                                    <span class="team-member-skills-diagram">
+                                                    <span class="team-member-skills-79"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-md-push-1">
+                                        <div class="team-member-sidebar">
+                                            <div class="text-center">
+                                                <img class="team-member-sidebar-photo shadow" src="img/user.png" alt="user photo">
+                                                <span class="team-member-name h3">Alex Example</span>
+                                            </div>
+
+                                            <div class="team-member-sidebar-list">
+                                                <ul>
+                                                    <li class="">
+                                                        <span class="contact-icon"><span class="ti-mobile"></span></span>
+                                                        <span class="contact-link"><a href="tel:123456789">+49 123 456 789</a></span>
+                                                    </li>
+                                                    <li class="">
+                                                        <span class="contact-icon"><span class="ti-mouse-alt"></span></span>
+                                                        <span class="contact-link"><a href="mailto:alex@example.com">alex@example.com</a></span>
+                                                    </li>
+                                                    <li class="">
+                                                        <span class="contact-icon"><span class="ti-skype"></span></span>
+                                                        <span class="contact-link"><a href="skype:@alex@example">@alexexample</a></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="team-member-sidebar-list">
+                                                <ul>
+                                                    <li class="">
+                                                        <span class="team-member-sidebar-list-label">Polish</span>
+                                                        <span class="team-member-sidebar-list-rating pull-right">
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="">
+                                                        <span class="team-member-sidebar-list-label">English</span>
+                                                        <span class="team-member-sidebar-list-rating pull-right">
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star languages-rating-unactive"></span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="">
+                                                        <span class="team-member-sidebar-list-label">French</span>
+                                                        <span class="team-member-sidebar-list-rating pull-right">
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star"></span>
+                                                        <span class="ti-star languages-rating-unactive"></span>
+                                                        <span class="ti-star languages-rating-unactive"></span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / TEAM MODAL -->
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

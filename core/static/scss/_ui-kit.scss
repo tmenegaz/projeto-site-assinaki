@@ -1,0 +1,105 @@
+.colors {
+	li {
+		text-align: center;
+		height: 180px;
+ 
+		span {
+			display: block;
+			color: $body-text-color;
+			
+		}
+	}
+	&-single {
+		width: 100%;
+		height: 100px;
+		display: block;
+		float: left;
+		margin-bottom: $margin-base;
+	}
+}
+.main-theme-color {
+	background:$main-theme-color
+}
+.main-theme-color-secondary {
+background:$main-theme-color-secondary
+}
+
+.main-theme-color-tertiary {
+background:$main-theme-color-tertiary
+}
+
+.theme-gray-base {
+background:$theme-gray-base
+}
+
+.gray-base {
+background:$gray-base
+}
+
+.gray-darker {
+background:$gray-darker
+}
+ 
+ .gray-dark {
+background:$gray-dark
+}
+ 
+ .gray {
+background:$gray
+}
+  
+   .gray-light {
+background:$gray-light
+}
+ 
+   .gray-lighter {
+background:$gray-lighter
+}
+ 
+   .brand-primary {
+background:$brand-primary
+}
+ 
+    .brand-success {
+background:$brand-success
+}
+ 
+     .brand-info {
+background:$brand-info
+}
+
+    .brand-warning {
+background:$brand-warning
+}
+
+    .brand-danger{
+background:$brand-danger
+}
+
+
+
+    .button-text{
+background:$button-text
+}
+
+
+    .body-text-color{
+background:$body-text-color
+}
+
+    .main-light-color{
+background:$main-light-color
+}
+
+    .main-dark-color{
+background:$main-dark-color
+}
+
+
+    .main-light-gray{
+background:$main-light-gray
+}
+
+
+ 
+ 

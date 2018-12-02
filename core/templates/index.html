@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title|capfirst }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"><![endif]-->
+    <link rel="icon" type="image/ico" href="{% static 'img/favicon.ico' %}" sizes="64x64"/>
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Lato:300,400,700' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-light.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme-light.css' %}">
+    <script src="{% static 'js/vendor/wow.js' %}"></script>
+    <style type="text/css">
+    .promo {
+    padding-top: 5px;
+    padding-bottom: 80px;
+    background: #fff;
+    }
+    .promo ul li {
+    margin-bottom: 30px;
+    }
+    .promo ul li img {
+    transition: all 600ms ease-in-out 0s;
+    width: 100%;
+    }
+    .promo ul li a {
+    display: block;
+    float: left;
+    height: 300px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out 0s;
+    }
+    .promo ul li a:hover img {
+    margin-top: -220px;
+    }
+    .promo span.h3 {
+    display: block;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    .promo span.h4 {
+    color: #999;
+    display: block;
+    font-weight: normal;
+    height: 35px;
+    text-align: center;
+    }
+    .about-introduction, .testimonials-introduction, .services-introduction, .portfolio-introduction, .timeline-introduction, .clients-introduction, .post-list-introduction, .team-introduction, .pricing-introduction, .contact-introduction {
+    margin-bottom: 60px;
+    }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" class="dark-theme">
+    <section class="promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 services-introduction text-center">
+            <img src="{% static 'img/logo-assinaki.png' %}" alt="logo" width="200">
+            <p class="text-center inverse">Uma maneira inteligente de assinar documentos.</p>
+          </div>
+          <ul>
+            <li class="col-md-3">
+              <a href="index-light.html" target="_blank">
+                <span class="h3">{{ pagina_1 }}</span>
+                <span class="h4">O que nós constitui é a seriedade</span>
+                <img src="{% static 'img/promo/cover1.jpg' %}">
+              </a>
+            </li>
+            <li class="col-md-3">
+              <a href="http://thymetheme.pl/creativia/index-light.html" target="_blank">
+                <span class="h3">{{ pagina_2 }}</span>
+                <span class="h4">Assine onde e qunado quiser</span>
+                <img src="{% static 'img/promo/cover2.jpg' %}">
+              </a>
+            </li>
+            <li class="col-md-3">
+              <a href="http://thymetheme.pl/creativia/store-light.html" target="_blank">
+                <span class="h3">{{ pagina_3 }}</span>
+                <span class="h4">O cadastro é gratuíto</span>
+                <img src="{% static 'img/promo/cover7.jpg' %}">
+              </a>
+            </li>
+            <li class="col-md-3">
+              <a href="http://thymetheme.pl/creativia/store-dark.html" target="_blank">
+                <span class="h3">{{ pagina_4 }}</span>
+                <span class="h4">Faça a gestão de seus documentos</span>
+                <img src="{% static 'img/promo/cover8.jpg' %}">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"></script>
+    <script src="{% static 'js/vendor/swiper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.countTo.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.inview.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.filterizr.js' %}"></script>
+    <script src="{% static 'js/vendor/controls.js' %}"></script>
+  </body>
+</html>

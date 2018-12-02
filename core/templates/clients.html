@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Contato | {{ block.super }}
+{% endblock %}
+
+{% load static %}
+{% block container %}
+
+<section class="clients section" id="clients">
+        <div class="container overflow-hidden">
+            <div class="row">
+                <div class="col-md-12 clients-introduction">
+                    <h2 class="text-center">Our clients</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+                <div class="clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".1s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".2s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".3s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".4s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".5s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".6s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".7s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow wow bounceIn" data-wow-delay=".8s"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                        <div class="swiper-slide shadow"><img src="{% static 'img/brand.png' %}" alt="brand logo" />
+                        </div>
+                    </div>
+                    <div class="clients-pagination text-center"></div>
+                    <div class="clients-slider-next right-arrow-negative">
+                        <span class="ti-arrow-right"></span>
+                    </div>
+
+                    <div class="clients-slider-prev left-arrow-negative">
+                        <span class="ti-arrow-left"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

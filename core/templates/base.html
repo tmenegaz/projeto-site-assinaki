@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Assinaki Documents{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"><![endif]-->
+    <link rel="icon" type="image/ico" href="{% static 'img/favicon.ico' %}" sizes="64x64"/>
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Lato:300,400,700' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-light.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme-light.css' %}">
+    <script src="{% static 'js/vendor/wow.js' %}"></script>
+    <script src="{% static 'js/vendor/wow.js' %}"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-fixed-top shadow">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=""{% url 'index-light' %}"><img src="{% static 'img/logo-assinaki.png' %}" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'index-light' %}">Home</a>
+                    </li>
+                    <li><a href="{% url 'about' %}">about us</a>
+                    </li>
+                    <li><a href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li><a href="{% url 'clients' %}">Clientes</a>
+                    </li>
+                    <li><a href="{% url 'contact' %}">Contato</a>
+                    </li>
+                    <li><a href="{% url 'cadastro' %}">Cadastrar</a>
+                    </li>
+                    <li><a href="{% url 'login' %}">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block container %}{% endblock %}
+
+    <div class="section section-min">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img class="footer-logo" src="{% static 'img/logo-assinaki.png' %}" alt="footer-logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'js/vendor/swiper.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.inview.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.filterizr.js' %}"></script>
+<script src="{% static 'js/vendor/controls.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_6m6Glf1-P7jvVdHZ00e3Ue_EoUNe39g"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript">
+// Portfolio filters  
+$(function() {
+    //Initialize filterizr with default options
+    $('.filtr-container').filterizr();
+});
+</script>
+</body>
+
+</html>

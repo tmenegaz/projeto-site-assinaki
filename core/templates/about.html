@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Contato | {{ block.super }}
+{% endblock %}
+
+{% load static %}
+{% block container %}
+
+  <section class="about section" id="about">
+        <div class="col-md-12 about-introduction">
+            <h2 class="text-center">We are digital agency</h2>
+            <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+        <div class="container overflow-hidden">
+            <div class="row">
+                <div class="about-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="about-slider-half">
+                                <div class="about-image">
+                                    <img style="z-index: 1" src="{% static 'img/layer-1.png' %}" alt="mockup" class="wow fadeInDown" data-wow-delay=".4s">
+
+                                    <img style="z-index: 2" class="wow fadeInRight about-image-layer" src="img/layer-2.png" data-wow-delay=".8s" alt="mockup layer">
+
+                                    <img style="z-index: 3" class="wow fadeInLeft about-image-layer" src="img/layer-3.png" data-wow-delay="1.2s" alt="mockup layer">
+                                </div>
+                            </div>
+
+                            <div class="about-slider-half about-slider-half-padding">
+                                <h3 class="wow fadeInRight">Ssed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                                <p class="wow fadeInRight" data-wow-delay=".4s">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                </p>
+                                <div class="about-number-box counter">
+                                    <div class="text-center wow fadeInLeft about-slider-half">
+                                        <span class="about-number h2">7<span class="icon ti-arrow-up"></span></span>
+                                        <p>nisi ut aliquip</p>
+                                    </div>
+                                    <div class="text-center wow fadeInRight about-slider-half">
+                                        <span class="about-number h2">23+
+                                    <span class="icon ti-arrow-up"></span>
+                                        </span>
+                                        <p>tempor incididunt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="about-slider-half">
+                                <div class="about-image">
+                                    <img style="z-index: 1" src="{% static 'img/exemple.png' %}" alt="mockup">
+                                </div>
+                            </div>
+
+                            <div class="about-slider-half about-slider-half-padding">
+                                <h3>Ssed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                </p>
+                                <div class="about-number-box counter">
+                                    <div class="text-center about-slider-half">
+                                        <span class="about-number h2">7<span class="icon ti-arrow-up"></span></span>
+                                        <p>nisi ut aliquip</p>
+                                    </div>
+                                    <div class="text-center about-slider-half">
+                                        <span class="about-number h2">23+
+                                    <span class="icon ti-arrow-up"></span>
+                                        </span>
+                                        <p>tempor incididunt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-pagination text-center"></div>
+                    <div class="about-slider-next right-arrow-negative">
+                        <span class="ti-arrow-right"></span>
+                    </div>
+
+                    <div class="about-slider-prev left-arrow-negative">
+                        <span class="ti-arrow-left"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
