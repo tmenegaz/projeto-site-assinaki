@@ -1,0 +1,25 @@
+.clients {
+    @extend %section-padding;
+    background: $main-light-color;
+
+    &-introduction {
+        @extend %introduce;
+
+        p {
+            color: $main-gray;
+        }
+    }
+    &-slider {
+        padding: 0 $padding-base;
+        overflow: hidden;
+        width: 100%;
+        float: left;
+
+        img {
+            width: 100%;
+        }
+    }
+    .shadow {
+        box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.05);
+    }
+}

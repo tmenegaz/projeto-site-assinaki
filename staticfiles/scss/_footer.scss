@@ -1,0 +1,13 @@
+.footer {
+		@extend %section-padding;
+	height: auto;
+	min-height: auto;
+	float: left;
+	width: 100%;
+
+	&-logo {
+		margin: $margin-medium 0;
+		width: 220px;
+		height: auto;
+	}
+}

@@ -1,0 +1,89 @@
+.dark-theme {
+    background: $dark-body-bg;
+
+    p {
+        color: $main-gray;
+    }
+
+    .white-bg {
+        background: $dark-body-bg !important;
+    }
+    .contact.section {
+        background: $main-light-color none repeat scroll 0 0 !important;
+    }
+    .contact-data ul {
+        background: $dark-body-bg none repeat scroll 0 0;
+        float: left;
+        margin-bottom: 60px;
+        width: 100%;
+
+        li {
+            border-color: $main-light-color;
+            color: $main-dark-color;
+
+            .icon {
+                color: $main-dark-color;
+            }
+        }
+    }
+    .shadow {
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+    .navbar {
+        background: $main-light-gray none repeat scroll 0 0;
+    }
+    .section {
+        background: $main-light-color;
+
+        &.home {
+            background-image: none;
+        }
+        &:nth-of-type(even) {
+            background: $dark-body-bg;
+        }
+        .services-box, .pricing-box, .post-entry {
+            background: $main-light-color none repeat scroll 0 0;
+            margin-bottom: 30px;
+            padding: 30px;
+        }
+        .testimonials-container, .team-member, .timeline-item {
+            background: $dark-body-bg;
+            color: $main-dark-color;
+            border: none;
+
+            a {
+                color: $main-dark-color;
+            }
+        }
+        .about-counter {
+            background: none;
+        }
+        .team-member-name {
+            color: $main-dark-color;
+        }
+        .team-member-role {
+            color: $main-gray;
+        }
+    }
+    .pricing-box {
+        border-color: rgba($main-light-color, 0.3);
+    }
+    .carousel, .carousel-indicators {
+        background: none;
+    }
+
+        .table > thead > tr > td.info, .table > thead > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th, .table > tbody > tr > td.info, .table > tbody > tr > th.info, .table > tbody > tr.info > td, .table > tbody > tr.info > th, .table > tfoot > tr > td.info, .table > tfoot > tr > th.info, .table > tfoot > tr.info > td, .table > tfoot > tr.info > th, .table > thead > tr > td.success, .table > thead > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr > td.success, .table > tbody > tr > th.success, .table > tbody > tr.success > td, .table > tbody > tr.success > th, .table > tfoot > tr > td.success, .table > tfoot > tr > th.success, .table > tfoot > tr.success > td, .table > tfoot > tr.success > th, .table > thead > tr > td.danger, .table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr > td.danger, .table > tbody > tr > th.danger, .table > tbody > tr.danger > td, .table > tbody > tr.danger > th, .table > tfoot > tr > td.danger, .table > tfoot > tr > th.danger, .table > tfoot > tr.danger > td, .table > tfoot > tr.danger > th, .table > thead > tr > td.warning, .table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th, .table > tbody > tr > td.warning, .table > tbody > tr > th.warning, .table > tbody > tr.warning > td, .table > tbody > tr.warning > th, .table > tfoot > tr > td.warning, .table > tfoot > tr > th.warning, .table > tfoot > tr.warning > td, .table > tfoot > tr.warning > th {
+        color: #000;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+    background-color: transparent;
+}
+
+.portfolio-title {
+  color: #fff;
+ 
+}
+
+}

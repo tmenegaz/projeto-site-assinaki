@@ -7,7 +7,7 @@
 {% load static %}
 {% block container %}
 
-  <section class="about section" id="about">
+    <section class="about section" id="about">
         <div class="col-md-12 about-introduction">
             <h2 class="text-center">We are digital agency</h2>
             <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
@@ -22,9 +22,9 @@
                                 <div class="about-image">
                                     <img style="z-index: 1" src="{% static 'img/layer-1.png' %}" alt="mockup" class="wow fadeInDown" data-wow-delay=".4s">
 
-                                    <img style="z-index: 2" class="wow fadeInRight about-image-layer" src="img/layer-2.png" data-wow-delay=".8s" alt="mockup layer">
+                                    <img style="z-index: 2" class="wow fadeInRight about-image-layer" src="{% static 'img/layer-2.png' %}" data-wow-delay=".8s" alt="mockup layer">
 
-                                    <img style="z-index: 3" class="wow fadeInLeft about-image-layer" src="img/layer-3.png" data-wow-delay="1.2s" alt="mockup layer">
+                                    <img style="z-index: 3" class="wow fadeInLeft about-image-layer" src="{% static 'img/layer-3.png' %}" data-wow-delay="1.2s" alt="mockup layer">
                                 </div>
                             </div>
 
@@ -84,6 +84,77 @@
                     <div class="about-slider-prev left-arrow-negative">
                         <span class="ti-arrow-left"></span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 timeline-introduction">
+                    <h2 class="text-center">Our History</h2>
+                    <p class="text-center inverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+
+                <div class="col-md-12">
+                    <ul class="timeline-list">
+                        <li class="">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-briefcase"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInLeft">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">consectetur adipisicing elit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-panel"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInRight">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">Duis aute irure dolor in reprehenderit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-briefcase"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInLeft">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">consectetur adipisicing elit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge wow pulse" data-wow-delay=".3s" data-wow-iteration="2">
+                                <span class="ti-panel"></span>
+                            </div>
+                            <div class="timeline-item shadow wow fadeInRight">
+                                <span class="timeline-date h4">MAY 2015</span>
+                                <h4 class="timeline-title">Duis aute irure dolor in reprehenderit</h4>
+
+                                <div class="timeline-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

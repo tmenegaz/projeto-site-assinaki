@@ -1,0 +1,87 @@
+.portfolio-theme {
+	.about {
+		background: $main-light-color;
+	}
+	.navbar {
+		background: $transparent;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+
+		.navbar-collapse {
+			@include tablet {
+				&.in, &.collapsing {
+					background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+				}
+			}
+			@include smartphone {
+				&.in, &.collapsing {
+					background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+				}
+			}
+		}
+		&-nav {
+			float: none;
+
+			li > a {
+				color: $main-light-color;
+				border-color: rgba($main-theme-color, 0.3);
+			}
+		}
+		&-brand {
+			text-align: center;
+			margin-bottom: $margin-large;
+			float: none;
+			display: inline-block;
+		}
+	}
+	.home-slider .swiper-slide {
+		padding-top: 25vh;
+
+		@include medium-tablet {
+			padding-top: $padding-large;
+		}
+		@include smartphone {
+			padding-top: $padding-large;
+		}
+	}
+	.post {
+		&-entry {
+			padding: 0;
+		}
+		&-entry-cover {
+			margin-top: $margin-base;
+		}
+		&-entry-modal {
+			padding: $padding-base $padding-medium;
+		}
+	}
+	.section {
+		background: $main-light-gray;
+	}
+	.contact, .section:nth-of-type(2n) {
+		background: $main-light-color;
+	}
+	&.dark-theme {
+		.post {
+			&-entry {
+				padding: 0;
+			}
+			&-entry-cover {
+				margin-top: $margin-base;
+			}
+			&-entry-modal {
+				padding: $padding-base $padding-medium;
+			}
+		}
+		.navbar {
+			&-nav {
+				float: none;
+
+				li > a {
+					color: $main-dark-color;
+				}
+			}
+		}
+	}
+}

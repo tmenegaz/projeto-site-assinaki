@@ -1,0 +1,79 @@
+.contact {
+	@extend %section-padding;
+	background: $main-light-color;
+
+	&-with-map {
+		padding-bottom: 0;
+	}
+	&-introduction {
+		@extend %introduce;
+
+		p {
+			color: $main-gray;
+		}
+	}
+	&-form {
+		margin-bottom: $margin-large;
+		width: 100%;
+	}
+	.btn {
+		margin-top: $margin-medium;
+	}
+	&-data {
+		ul {
+			width: 100%;
+			background: $main-light-gray;
+			float: left;
+			margin-bottom: $margin-large;
+
+			li {
+				display: inline-block;
+				width: 33.3333%;
+				float: left;
+				text-align: center;
+				padding: $padding-medium 0;
+				border-right: 1px solid $main-light-color;
+
+				&:last-child {
+					border: none;
+				}
+				@include smartphone {
+					width: 100%;
+					border-bottom: 1px solid $main-light-color;
+					border-right: none;
+
+					&:last-child {
+						border: none;
+					}
+				}
+				@include medium-tablet {
+					width: 100%;
+					border-bottom: 1px solid $main-light-color;
+					border-right: none;
+
+					&:last-child {
+						border: none;
+					}
+				}
+			}
+		}
+		.icon {
+			display: inline-block;
+			text-align: center;
+			font-size: 22px;
+			height: 40px;
+			width: 40px;
+			position: relative;
+			top: 5px;
+			color: $main-theme-color;
+			line-height: 40px;
+		}
+	}
+	.google-maps > div {
+		width: 100%;
+		height: 500px;
+	}
+	.scrolloff {
+		pointer-events: none;
+	}
+}

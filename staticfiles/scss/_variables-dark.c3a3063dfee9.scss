@@ -1,0 +1,57 @@
+// we should inverted xolor value in this case 
+
+$main-theme-color:lighten(#772cac, 20%);
+$main-theme-color-secondary:#5183cd;
+$main-theme-color-tertiary:#51cdc6;
+
+
+$theme-gray-base: #eee;
+$gray-base:#666;
+$gray-darker:#777;
+$gray-dark: #888;
+$gray: #999;
+$gray-light:#ccc;
+$gray-lighter:#eee;
+
+$brand-primary: $main-theme-color;
+$brand-success: #4FE8A7 !default;
+$brand-info: #4f6ce8 !default;
+$brand-warning:#e1e940 !default;
+$brand-danger: #e84f62 !default;
+
+$button-text: #fff;
+$body-text-color: #fff;
+$main-light-color: #262626;
+$main-light-gray: #333;
+$main-gray: #aaa;
+$theme-gray-base: $gray-dark; 
+$main-dark-color: #fff;
+$transparent: rgba(255,255,255,0);
+$dark-body-bg: #141414;
+
+$theme-link-color: lighten($main-theme-color, 18.5%) ;
+$theme-link-hover-color: $main-theme-color;
+
+// P A D D I N G S
+$padding-base: 15px;
+$padding-medium: 30px;
+$padding-large: 60px;
+$padding-x-large: 90px;
+
+// M A R G I N S 
+$margin-base: 15px;
+$margin-medium: 30px;
+$margin-large: 60px;
+$margin-x-large: 90px;
+
+
+// F O N T S
+$main-font:'Lato', sans-serif;
+$main-font-secondary: 'Lato', sans-serif;
+$main-border-radius: 5px;
+
+ 
+
+ 
+ 
+
